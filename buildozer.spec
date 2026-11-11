@@ -5,12 +5,15 @@ package.domain = org.example
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas,json,ico
 version = 1.0
-requirements = python3,kivy==2.3.0,kivymd==1.2.0,Cython==0.29.33,pyjnius==1.5.0
+
+# Откатываем KivyMD до стабильной версии и убираем жесткий pyjnius
+requirements = python3,kivy==2.3.0,kivymd==1.1.1,Cython==0.29.33,pillow
+
 orientation = portrait
 fullscreen = 0
 icon.filename = %(source.dir)s/icon.ico
 
-# --- ВАЖНЫЕ НАСТРОЙКИ ДЛЯ СТАБИЛЬНОСТИ ---
+# --- ВАЖНЫЕ НАСТРОЙКИ ---
 android.accept_sdk_license = True
 android.api = 33
 android.ndk = 25b
