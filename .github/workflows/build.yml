@@ -22,3 +22,10 @@ jobs:
         with:
           name: package
           path: bin/*.apk
+      - name: Install Buildozer
+        run: |
+          pip install buildozer
+          pip install --user --upgrade Cython==0.29.33 virtualenv
+
+      - name: Build with Buildozer
+        run: buildozer android debug
