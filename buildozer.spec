@@ -7,7 +7,5 @@ requirements = python3,kivy==2.3.0,kivymd==1.2.0,Cython==0.29.33,pyjnius==1.5.0
 orientation = portrait
 fullscreen = 0
 icon.filename = %(source.dir)s/icon.ico
-
-# --- ВАЖНЫЕ НАСТРОЙКИ ДЛЯ GITHUB ACTIONS ---
 android.accept_sdk_license = True
 android.ndk_api = 21
