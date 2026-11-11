@@ -10,6 +10,8 @@ orientation = portrait
 fullscreen = 0
 icon.filename = %(source.dir)s/icon.ico
 
-# --- ВАЖНЫЕ НАСТРОЙКИ ДЛЯ GITHUB ACTIONS ---
+# --- ВАЖНЫЕ НАСТРОЙКИ ДЛЯ СТАБИЛЬНОСТИ ---
 android.accept_sdk_license = True
+android.api = 33
+android.ndk = 25b
 android.ndk_api = 21
